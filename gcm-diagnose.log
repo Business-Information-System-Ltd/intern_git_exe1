@@ -1,0 +1,212 @@
+﻿Diagnose log at 2026-10-16T08:31:59Z
+
+AppPath: C:\Program Files\Git\ucrt64\bin\git-credential-manager.exe
+InstallDir: C:\Program Files\Git\ucrt64\bin\
+Version: 2.9.1+6760f0ef069c994aa2bb1d703fb374986ee82a3e
+
+------------
+Diagnostic: Environment
+Skipped: False
+Success: True
+Exception: None
+Log:
+OSType: Windows
+OSVersion: 10.0 (build 22000)
+Reading environment variables... OK
+ Variables:
+SESSIONNAME=Console
+ProgramFiles(x86)=C:\Program Files (x86)
+MSYSTEM=UCRT64
+ProgramW6432=C:\Program Files
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 140 Stepping 1, GenuineIntel
+Window=C:\Windows
+TMP=C:\Users\User\AppData\Local\Temp
+PROCESSOR_ARCHITECTURE=AMD64
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL
+VSCODE_NONCE=573b5bbc-71e9-4b3c-87bf-77f72b826ba6
+PROCESSOR_REVISION=8c01
+JUNIT_HOME=C:\JUnit4
+USERPROFILE=C:\Users\User
+GIT_TRACE2_PARENT_SID=9d82fc6d-1e28-44e3-a572-5153fae14d6c
+LOGONSERVER=\\DESKTOP-NLVEBS8
+TEMP=C:\Users\User\AppData\Local\Temp
+MKL_SERIAL=YES
+SystemRoot=C:\Windows
+CHROME_CRASHPAD_PIPE_NAME=\\.\pipe\crashpad_4804_YEJXBIZIELCSJMPG
+GIT_EXEC_PATH=C:/Program Files/Git/ucrt64/libexec/git-core
+PLINK_PROTOCOL=ssh
+Flutter=C:\flutter\bin
+PATH=C:/Program Files/Git/ucrt64/libexec/git-core;C:\Program Files\Git\ucrt64\bin;C:\Program Files\Git\usr\bin;C:\Users\User\bin;C:\flutter\bin;C:\Program Files\Git\cmd;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32;C:\Windows;C:\Program Files\Git\cmd;C:\Users\User\AppData\Local\Programs\Python\Python314\Scripts\;C:\Users\User\AppData\Local\Programs\Python\Python314\;C:\Users\User\AppData\Local\Programs\Python\Launcher\;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Program Files\Java\jdk-1.8\bin;C:\Program Files\JetBrains\PyCharm 2026.1.4\bin;C:\flutter\bin;C:\Users\User\AppData\Local\Programs\Microsoft VS Code\bin
+OneDrive=C:\Users\User\OneDrive
+USERDOMAIN_ROAMINGPROFILE=DESKTOP-NLVEBS8
+VS110COMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\Tools\
+__PSLockDownPolicy=0
+CommonProgramFiles=C:\Program Files\Common Files
+ZES_ENABLE_SYSMAN=1
+Wbem=C:\Windows\System32\Wbem
+ProgramData=C:\ProgramData
+LANG=en_US.UTF-8
+HOMEPATH=\Users\User
+System32=C:\Windows\System32
+COMPUTERNAME=DESKTOP-NLVEBS8
+VSCODE_INJECTION=1
+ALLUSERSPROFILE=C:\ProgramData
+CommonProgramW6432=C:\Program Files\Common Files
+VSCODE_A11Y_MODE=0
+TERM=xterm-256color
+KMP_DUPLICATE_LIB_OK=TRUE
+DriverData=C:\Windows\System32\Drivers\DriverData
+HOMEDRIVE=C:
+windir=C:\Windows
+CLASSPATH=%CLASSPATH%;C:\JUnit4\*;.;
+SystemDrive=C:
+NUMBER_OF_PROCESSORS=4
+OS=Windows_NT
+Git=C:\Program Files\Git\cmd
+ProgramFiles=C:\Program Files
+ComSpec=C:\Windows\system32\cmd.exe
+VS120COMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\Tools\
+VSCODE_STABLE=1
+USERNAME=User
+HOME=C:\Users\User
+PSModulePath=C:\Users\User\Documents\WindowsPowerShell\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules
+JAVA_HOME=C:\Program Files\Java\jdk-1.8
+PROMPT=$P$G
+TMPDIR=C:\Users\User\AppData\Local\Temp
+APPDATA=C:\Users\User\AppData\Roaming
+USERDOMAIN=DESKTOP-NLVEBS8
+PROCESSOR_LEVEL=6
+LOCALAPPDATA=C:\Users\User\AppData\Local
+PyCharm=C:\Program Files\JetBrains\PyCharm 2026.1.4\bin
+TERM_PROGRAM_VERSION=1.142.0
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+COLORTERM=truecolor
+PUBLIC=C:\Users\Public
+TERM_PROGRAM=vscode
+
+
+------------
+Diagnostic: File system
+Skipped: False
+Success: True
+Exception: None
+Log:
+Temporary directory is 'C:\Users\User\AppData\Local\Temp\'...
+Checking basic file I/O...
+Writing to temporary file 'C:\Users\User\AppData\Local\Temp\48c740ef82f876ccf1ed9e4b'... OK
+Reading from temporary file 'C:\Users\User\AppData\Local\Temp\48c740ef82f876ccf1ed9e4b'... OK
+Deleting temporary file 'C:\Users\User\AppData\Local\Temp\48c740ef82f876ccf1ed9e4b'... OK
+Testing IFileSystem instance...
+UserHomePath: C:\Users\User
+UserDataDirectoryPath: C:\Users\User\.gcm
+GetCurrentDirectory(): D:\intern\intern_git_exe1
+
+------------
+Diagnostic: Networking
+Skipped: False
+Success: True
+Exception: None
+Log:
+Checking networking and HTTP stack...
+Creating HTTP client... OK
+IsNetworkAvailable: True
+Sending HEAD request to http://example.com... OK
+Sending HEAD request to https://example.com... OK
+Acquiring free TCP port... OK
+Testing local HTTP loopback connections...
+Creating new HTTP listener for http://localhost:35487/... OK
+Waiting for loopback connection... OK
+Writing response... OK
+Waiting for response data... OK
+Loopback connection data OK
+
+------------
+Diagnostic: Git
+Skipped: False
+Success: True
+Exception: None
+Log:
+Getting Git version... OK
+Git version is '2.56.0.windows.2'
+Locating current repository...Git repository at 'D:/intern/intern_git_exe1/.git'
+ OK
+Listing all Git configuration... OK
+Git configuration:
+file:C:/Program Files/Git/etc/gitconfig	diff.astextplain.textconv=astextplain
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.clean=git-lfs clean -- %f
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.smudge=git-lfs smudge -- %f
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.process=git-lfs filter-process
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.required=true
+file:C:/Program Files/Git/etc/gitconfig	http.sslbackend=schannel
+file:C:/Program Files/Git/etc/gitconfig	core.autocrlf=true
+file:C:/Program Files/Git/etc/gitconfig	core.fscache=true
+file:C:/Program Files/Git/etc/gitconfig	core.symlinks=false
+file:C:/Program Files/Git/etc/gitconfig	pull.rebase=false
+file:C:/Program Files/Git/etc/gitconfig	credential.helper=manager
+file:C:/Program Files/Git/etc/gitconfig	credential.https://dev.azure.com.usehttppath=true
+file:C:/Program Files/Git/etc/gitconfig	init.defaultbranch=master
+file:C:/Users/User/.gitconfig	user.email=thawyaminshwesin@gmail.com
+file:C:/Users/User/.gitconfig	user.name=thawyaminshwesin-wq
+file:C:/Users/User/.gitconfig	credential.helper=manager
+file:C:/Users/User/.gitconfig	credential.githubauthmodes=device
+file:.git/config	core.repositoryformatversion=0
+file:.git/config	core.filemode=false
+file:.git/config	core.bare=false
+file:.git/config	core.logallrefupdates=true
+file:.git/config	core.symlinks=false
+file:.git/config	core.ignorecase=true
+file:.git/config	remote.origin.url=https://github.com/Business-Information-System-Ltd/intern_git_exe1.git
+file:.git/config	remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+file:.git/config	branch.main.remote=origin
+file:.git/config	branch.main.merge=refs/heads/main
+file:.git/config	branch.main.vscode-merge-base=origin/main
+file:.git/config	branch.thaw.vscode-merge-base=origin/main
+
+
+------------
+Diagnostic: Credential storage
+Skipped: False
+Success: True
+Exception: None
+Log:
+ICredentialStore instance is of type: CredentialStore
+Writing test credential... OK
+Reading test credential... OK
+Deleting test credential... OK
+
+------------
+Diagnostic: Microsoft authentication (AAD/MSA)
+Skipped: False
+Success: True
+Exception: None
+Log:
+Broker is not enabled.
+Gathering MSAL token cache data... OK
+CacheDirectory: C:\Users\User\AppData\Local\.IdentityService
+CacheFileName: msal.cache
+CacheFilePath: C:\Users\User\AppData\Local\.IdentityService\msal.cache
+Creating cache helper... OK
+Verifying MSAL token cache persistence... OK
+
+------------
+Diagnostic: GitHub API
+Skipped: False
+Success: False
+Exception:
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at GitHub.GitHubRestApi.<GetMetaInfoAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at GitHub.Diagnostics.GitHubApiDiagnostic.<RunInternalAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at GitCredentialManager.Diagnostics.Diagnostic.<RunAsync>d__6.MoveNext()
+Log:
+Using 'https://github.com/' as API target.
+Querying '/meta' endpoint...
