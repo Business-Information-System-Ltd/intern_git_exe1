@@ -1,355 +1,31 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* ==========================================
+   1. RESET & VARIABLES
+   ========================================== */
+:root {
+  --bg-color: #f4f5f7;
+  --card-bg: #ffffff;
+  --inner-card-bg: #f7f9fa;
+  --header-bg: #374b5c;
+  --footer-bg: #374b5c;
+
+  --primary-accent: #20b362;
+  --accent-light: #e1f5e9;
+  --active-nav-bg: #495e70;
+
+  --text-dark: #233342;
+  --text-muted: #6b7c93;
+  --text-light: #ffffff;
+  --link-green: #20b362;
+
+  --font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  --max-width: 820px;
+  --border-radius-lg: 16px;
+  --border-radius-sm: 8px;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f8f8f8;
-
-  color: #34495e;
-
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Single Header */
-.header {
-  background-color: #34495e;
-  color: white;
-  min-height: 55px;
-  padding: 15px 3.2%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  gap: 20px;
-}
-
-.logo {
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-  text-decoration: none;
-  white-space: nowrap;
-}
-
-.navbar {
-  display: flex;
-  align-items: center;
-  gap: 25px;
-}
-
-.navbar a {
-  color: white;
-  text-decoration: none;
-  font-size: 14px;
-  transition: color 0.3s;
-}
-
-.navbar a:hover {
-  color: #2ecc71;
-}
-
-/* Main Content */
-main {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Home Section */
-.page {
-  flex: 1;
-  min-height: 0;
-  padding: 15px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.home-section {
-  flex: 1;
-  min-height: 0;
-}
-
-/* White Content Card */
-.content-card {
-  background-color: white;
-  width: 100%;
-  max-width: 615px;
-  min-height: 480px;
-  padding: 38px 15px;
-  border-radius: 7px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12);
-}
-
-.content-card h1 {
-  font-size: 25px;
-  margin-bottom: 14px;
-  color: #34495e;
-}
-
-.content-card > p {
-  font-size: 13px;
-  line-height: 1.8;
-  margin-bottom: 20px;
-  color: #53677e;
-}
-
-/* Home Image */
-.profile-image {
-  display: block;
-  width: 250px;
-  height: 270px;
-  object-fit: cover;
-  border-radius: 12px;
-  margin: 50px auto 0;
-}
-
-/* Single Footer */
-.footer {
-  background-color: #2c3e50;
-  color: white;
-  text-align: center;
-  padding: 10px 15px;
-
-  font-size: 24px;
-  font-weight: bold;
-  color: white;
-  white-space: nowrap;
-}
-
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: white;
-  font-size: 16px;
-  padding: 12px;
-  border-radius: 6px;
-  transition: 0.3s;
-}
-
-.nav-links a:hover,
-.nav-links a.active {
-  background-color: #465e73;
-  color: #65e5a0;
-}
-
-/* Main Section */
-main {
-  flex: 1;
-  width: 100%;
-  padding: 13px 20px;
-}
-
-.container {
-  max-width: 820px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 29px;
-  background-color: #fff;
-  border: 1px solid #e4eaf0;
-  border-radius: 16px;
-  box-shadow: 0 5px 20px rgba(35, 55, 75, 0.06);
-}
-
-/* Heading */
-.subtitle {
-  color: #19ad5a;
-  font-size: 16px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  margin-bottom: 10px;
-}
-
-h1 {
-  font-size: 34px;
-  color: #30465b;
-  margin-bottom: 10px;
-}
-
-.intro {
-  color: #687c91;
-  font-size: 14px;
-  line-height: 1.7;
-  margin-bottom: 22px;
-}
-
-h2 {
-  font-size: 21px;
-  color: #263d53;
-  margin-bottom: 14px;
-}
-
-/* Skill Cards */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 12px;
-  margin-bottom: 24px;
-}
-
-.skill-card {
-  background-color: #f7f9fa;
-  border: 1px solid #e5ebf0;
-  border-left: 5px solid #20b362;
-  border-radius: 12px;
-  padding: 18px 15px 14px;
-  min-width: 0;
-  min-height: 266px;
-}
-
-.skill-icon {
-  font-size: 23px;
-  margin-bottom: 12px;
-}
-
-.skill-card h3 {
-  color: #263d53;
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 6px;
-}
-
-.skill-card p {
-  color: #687c91;
-  font-size: 13px;
-  line-height: 1.6;
-  margin-bottom: 10px;
-}
-
-/* Skill Tags */
-.tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-}
-
-.tag {
-  display: inline-block;
-  background-color: #e1f5e9;
-  color: #177b4b;
-  font-size: 11px;
-  padding: 4px 8px;
-  border-radius: 15px;
-  white-space: nowrap;
-}
-
-/* Currently Learning */
-.learning-card {
-  background-color: #f7f9fa;
-  border: 1px solid #e5ebf0;
-  border-left: 5px solid #20b362;
-  border-radius: 10px;
-  padding: 18px 15px;
-}
-
-.learning-icon {
-  font-size: 23px;
-  margin-bottom: 10px;
-}
-
-.learning-card h3 {
-  color: #263d53;
-  font-size: 17px;
-  margin-bottom: 7px;
-}
-
-.learning-card p {
-  color: #687c91;
-  font-size: 13px;
-  line-height: 1.7;
-}
-
-.social-links {
-  display: flex;
-  justify-content: center;
-
-  align-items: center;
-  gap: 22px;
-  margin-bottom: 15px;
-}
-
-.social-links a {
-  color: #2ecc71;
-  text-decoration: none;
-  font-size: 13px;
-
-  gap: 34px;
-  margin-bottom: 8px;
-}
-
-.social-links a:hover {
-  color: white;
-}
-
-.social-links span {
-  color: white;
-}
-
-.footer p {
-  font-size: 13px;
-  line-height: 1.6;
-}
-
-/* Responsive Design */
-@media (max-width: 700px) {
-  .header {
-    flex-direction: column;
-    gap: 15px;
-    padding: 16px 12px;
-  }
-
-  .navbar {
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-
-  .navbar a {
-    font-size: 13px;
-  }
-
-  .page {
-    flex: 1;
-    min-height: 0;
-    padding: 20px 12px;
-  }
-
-  .home-section {
-    min-height: 0;
-  }
-
-  .content-card {
-    min-height: 430px;
-    padding: 28px 18px;
-  }
-
-  .content-card h1 {
-    font-size: 22px;
-  }
-
-  .profile-image {
-    width: 200px;
-    height: 200px;
-    margin-top: 40px;
-  }
-
-  .social-links {
-    gap: 14px;
-  }
-}
-
-/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -359,359 +35,380 @@ h2 {
 html,
 body {
   width: 100%;
-  height: 100%;
-  overflow: hidden;
+  min-height: 100vh;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #222;
-
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: var(--text-dark);
   display: flex;
   flex-direction: column;
-  min-height: 0;
 }
 
-/* Navigation Bar */
-nav {
-  flex-shrink: 0;
-  background-color: #1e2a36;
-  color: white;
-
-  height: 75px;
-  margin: 3.4% 2.2% 0;
-  padding: 0 3%;
-
+/* ==========================================
+   2. UNIFIED NAVBAR (Consistent Across All Pages)
+   ========================================== */
+.navbar {
+  background-color: var(--header-bg);
+  color: var(--text-light);
+  height: 65px;
+  padding: 0 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
-nav h2 {
-  font-size: 22px;
+.navbar .logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-light);
+  text-decoration: none;
+  white-space: nowrap;
 }
 
-nav ul {
+.navbar.nav-links,
+.nav-links {
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 30px;
+  gap: 8px;
 }
 
-nav ul li a {
-  color: #ddd;
+.navbar a,
+.nav-links a {
+  color: #d1d8e0;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: var(--border-radius-sm);
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
 }
 
-nav ul li a:hover {
-  color: #4caf79;
+.navbar a:hover,
+.navbar a.active,
+.nav-links a:hover,
+.nav-links a.active {
+  background-color: var(--active-nav-bg);
+  color: var(--text-light);
 }
 
-/* Main Content */
+/* ==========================================
+   3. MAIN CONTAINER
+   ========================================== */
 main {
-  width: 52%;
   flex: 1;
-  min-height: 0;
-
-  margin: 20px auto;
-  padding: 35px 18px;
-
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 40px auto;
+  padding: 36px 40px;
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow);
+  border: 1px solid #eaeef2;
+  display: flex;
+  flex-direction: column;
 }
 
-main h1 {
-  font-size: 30px;
-  margin-bottom: 22px;
-  color: #111;
+/* Home page layout override */
+body:has(.home-section) main {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  padding: 40px 20px;
+  max-width: none;
 }
 
-main .intro {
-  font-size: 15px;
-  color: #555;
-  line-height: 1.5;
-  margin-bottom: 18px;
+.subtitle {
+  color: var(--primary-accent);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
 }
 
-/* Learning Cards */
-.learning-card {
-  background-color: #f7f7f7;
-  border-left: 5px solid #3c9b69;
-  border-radius: 6px;
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+}
 
-  padding: 20px;
+h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin: 24px 0 14px 0;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin: 20px 0 12px 0;
+}
+
+.intro {
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+/* ==========================================
+   4. HOME PAGE (index.html)
+   ========================================== */
+.home-section {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.content-card {
+  width: 100%;
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius-lg);
+  padding: 36px 40px;
+  box-shadow: var(--shadow);
+  border: 1px solid #eaeef2;
+}
+
+.profile-image {
+  display: block;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin: 30px auto 0;
+}
+
+/* ==========================================
+   5. CARDS (Learning, Projects, & About)
+   ========================================== */
+.learning-card,
+.project-card,
+.about-card {
+  background-color: var(--inner-card-bg);
+  border: 1px solid #e2e8f0;
+  border-left: 4px solid var(--primary-accent);
+  border-radius: var(--border-radius-sm);
+  padding: 18px 20px;
   margin-bottom: 16px;
 }
 
-.learning-card h3 {
-  font-size: 18px;
-  margin-bottom: 18px;
+.learning-card h3,
+.project-card h3 {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: var(--text-dark);
 }
 
-.learning-card p {
-  font-size: 15px;
+.learning-card p,
+.project-card p,
+.about-card p {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 4px;
+}
+
+.project-card p strong {
+  color: var(--text-dark);
+}
+
+/* ==========================================
+   6. SKILLS PAGE (skills.html)
+   ========================================== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.skill-card {
+  background-color: var(--inner-card-bg);
+  border: 1px solid #e2e8f0;
+  border-left: 4px solid var(--primary-accent);
+  border-radius: var(--border-radius-sm);
+  padding: 16px 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-icon {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.skill-card h3 {
+  font-size: 14px;
+  line-height: 1.3;
+  margin: 0 0 8px 0;
+}
+
+.skill-card p {
+  font-size: 12px;
+  color: var(--text-muted);
   line-height: 1.5;
-  color: #333;
+  margin-bottom: 12px;
+  flex-grow: 1;
 }
 
-/* Footer */
-footer {
-  flex-shrink: 0;
-  background-color: #1e2a36;
-  color: #ddd;
-  text-align: center;
-
-  padding: 12px 10px;
-  margin: 0 2.2% 3.8%;
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
 }
 
-footer .social-links {
+.tag {
+  background-color: var(--accent-light);
+  color: #15803d;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 12px;
+}
+
+/* ==========================================
+   7. CONTACT PAGE (contact.html)
+   ========================================== */
+.contact-container {
+  width: 100%;
+}
+
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.contact-card {
+  background-color: var(--inner-card-bg);
+  border: 1px solid #e2e8f0;
+  border-left: 4px solid var(--primary-accent);
+  border-radius: var(--border-radius-sm);
+  padding: 18px 16px;
+}
+
+.contact-card .emoji {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.contact-card h4 {
+  font-size: 15px;
+  color: var(--text-dark);
+  margin-bottom: 6px;
+}
+
+.contact-card p {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.5;
   margin-bottom: 14px;
 }
 
-footer a {
-  color: #54a879;
+.contact-card a {
+  color: var(--link-green);
+  font-weight: 700;
   text-decoration: none;
-  margin: 0 15px;
-  font-size: 14px;
+  font-size: 13px;
 }
 
-footer a:hover {
-  color: white;
+.contact-card a:hover {
+  text-decoration: underline;
 }
 
-footer p {
-  font-size: 14px;
+.about-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 12px;
 }
 
-/* Laptop and small screens */
-@media (max-height: 750px) and (min-width: 769px) {
-  nav {
-    height: 60px;
-    margin-top: 2%;
+/* ==========================================
+   8. FOOTER
+   ========================================== */
+footer,
+.footer {
+  background-color: var(--footer-bg);
+  color: var(--text-light);
+  text-align: center;
+  padding: 16px 10px;
+  width: 100%;
+  margin-top: auto;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.social-links a {
+  color: var(--link-green);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+.social-links span {
+  color: #64748b;
+}
+
+footer p,
+.footer p {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+/* ==========================================
+   9. RESPONSIVE BREAKPOINTS
+   ========================================== */
+@media (max-width: 820px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  main {
-    padding: 22px 18px;
-    margin: 12px auto;
-  }
-
-  main h1 {
-    font-size: 25px;
-    margin-bottom: 14px;
-  }
-
-  main .intro {
-    margin-bottom: 12px;
-  }
-
-  .learning-card {
-    padding: 14px 18px;
-    margin-bottom: 12px;
-  }
-
-  .learning-card h3 {
-    margin-bottom: 10px;
-  }
-
-  footer {
-    margin-bottom: 2%;
-    padding: 10px;
-  }
-
-  footer .social-links {
-    margin-bottom: 10px;
-
-    text-decoration: underline;
-  }
-
-  footer p {
-    font-size: 12px;
-    line-height: 1.5;
-  }
-
-  /* Tablet */
-  @media (max-width: 900px) {
-    .navbar {
-      padding: 15px 20px;
-    }
-
-    .container {
-      max-width: 760px;
-      padding: 25px;
-    }
-
-    .skills-grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
+  .contact-cards {
+    grid-template-columns: 1fr;
   }
 }
 
-@media (max-width: 768px) {
-  nav {
+@media (max-width: 600px) {
+  .navbar {
     height: auto;
-    min-height: 65px;
-    margin: 12px 12px 0;
-    padding: 12px;
-
+    padding: 14px 20px;
     flex-direction: column;
     gap: 12px;
   }
 
-  nav h2 {
-    font-size: 20px;
-  }
-
-  nav ul {
-    gap: 12px;
+  .navbar .nav-links,
+  .nav-links {
+    gap: 4px;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  nav ul li a {
-    font-size: 12px;
-  }
-
   main {
-    width: auto;
-    margin: 12px;
-    padding: 20px 15px;
+    margin: 20px 12px;
+    padding: 24px 18px;
   }
 
-  main h1 {
-    font-size: 23px;
-    margin-bottom: 12px;
-  }
-
-  main .intro {
-    font-size: 13px;
-    margin-bottom: 12px;
-  }
-
-  .learning-card {
-    padding: 13px;
-    margin-bottom: 10px;
-  }
-
-  .learning-card h3 {
-    font-size: 15px;
-    margin-bottom: 10px;
-  }
-
-  .learning-card p {
-    font-size: 12px;
-  }
-
-  footer {
-    margin: 0 12px 12px;
-    padding: 10px 5px;
-  }
-
-  footer a {
-    margin: 0 5px;
-    font-size: 12px;
-
-    @media (max-width: 600px) {
-      .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 12px;
-      }
-
-      .logo {
-        font-size: 22px;
-      }
-
-      .nav-links {
-        width: 100%;
-        gap: 3px;
-      }
-
-      .nav-links a {
-        font-size: 13px;
-        padding: 9px 8px;
-      }
-
-      main {
-        padding: 15px 12px;
-      }
-
-      .container {
-        padding: 20px 16px;
-        border-radius: 12px;
-      }
-
-      h1 {
-        font-size: 29px;
-      }
-
-      h2 {
-        font-size: 20px;
-      }
-
-      .intro {
-        font-size: 13px;
-      }
-
-      .skills-grid {
-        grid-template-columns: 1fr;
-        gap: 12px;
-      }
-
-      .skill-card {
-        min-height: auto;
-        padding: 18px;
-      }
-
-      .learning-card {
-        padding: 18px;
-      }
-
-      footer p {
-        font-size: 11px;
-      }
-    }
-
-    /* Short mobile screens */
-    @media (max-width: 768px) and (max-height: 700px) {
-      nav {
-        gap: 8px;
-        padding: 8px;
-      }
-
-      main {
-        margin: 8px 12px;
-        padding: 12px;
-      }
-
-      main h1 {
-        font-size: 20px;
-        margin-bottom: 8px;
-      }
-
-      main .intro {
-        margin-bottom: 8px;
-      }
-
-      .learning-card {
-        padding: 9px 12px;
-        margin-bottom: 7px;
-      }
-
-      .learning-card h3 {
-        margin-bottom: 6px;
-      }
-      footer {
-        padding: 7px 5px;
-        margin-bottom: 8px;
-      }
-
-      footer .social-links {
-        margin-bottom: 7px;
-      }
-    }
+  .skills-grid {
+    grid-template-columns: 1fr;
   }
 }
